@@ -1,0 +1,16 @@
+{
+    "name": "Vertex",
+    "short_name": "Vertex",
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "orientation": "landscape",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "description": "High speed 2D physics arena 1v1 shooter. Build upgrade combos in different arenas across various modes. Every game is different. Play solo or local 2P.",
+    "icons": [{
+      "src": "TemplateData/icons/unity-logo-dark.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }]
+  }
