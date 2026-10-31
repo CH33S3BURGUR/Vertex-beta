@@ -14,9 +14,14 @@
       html, body { margin:0; height:100%; background:#000; overflow:hidden; }
       #unity-container { position:fixed; inset:0; }
       #unity-canvas { width:100% !important; height:100% !important; }
+      #rotate-msg { display:none; position:fixed; inset:0; z-index:999;
+      background:#000; color:#fff; font:20px sans-serif; align-items:center;
+      justify-content:center; text-align:center; }
+      @media (orientation: portrait) and (pointer: coarse) { #rotate-msg { display:flex; } }
     </style>
   </head>
   <body>
+    <div id="rotate-msg">Please rotate your phone to landscape</div>
     <div id="unity-container">
       <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -65,17 +70,17 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Vertex_v1.0.0.Beta.loader.js";
+      var loaderUrl = buildUrl + "/Vertex_v1.0.1.Beta.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Vertex_v1.0.0.Beta.data.unityweb",
-        frameworkUrl: buildUrl + "/Vertex_v1.0.0.Beta.framework.js.unityweb",
+        dataUrl: buildUrl + "/Vertex_v1.0.1.Beta.data.unityweb",
+        frameworkUrl: buildUrl + "/Vertex_v1.0.1.Beta.framework.js.unityweb",
         autoSyncPersistentDataPath: true,
-        codeUrl: buildUrl + "/Vertex_v1.0.0.Beta.wasm.unityweb",
+        codeUrl: buildUrl + "/Vertex_v1.0.1.Beta.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "CH33S3BURGUR",
         productName: "Vertex",
-        productVersion: "1.0.0",
+        productVersion: "1.0.1",
         showBanner: unityShowBanner,
         // errorHandler: function(err, url, line) {
         //    alert("error " + err + " occurred at line " + line);
