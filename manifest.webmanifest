@@ -8,7 +8,7 @@
     "theme_color": "#000000",
     "description": "High speed 2D physics arena 1v1 shooter. Build upgrade combos in different arenas across various modes. Every game is different. Play solo or local 2P.",
     "icons": [{
-      "src": "TemplateData/icons/VertexAppIcon512.png",
+      "src": "TemplateData/icons/VertexAppIconNoOutline512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
